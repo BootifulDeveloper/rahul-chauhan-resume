@@ -1,313 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Chauhan - Java Developer</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌙 Rahul Chauhan – Backend Engineer</title>
 
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Rahul Chauhan – Java Backend Developer specializing in Microservices, Spring Boot, and system design with 3+ years experience.">
+  <meta name="keywords" content="Java Developer, Spring Boot, Microservices, Backend Engineer, Rahul Chauhan, Backend Developer Portfolio">
+  <meta name="author" content="Rahul Chauhan">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-        .header {
-            text-align: center;
-            border-bottom: 2px solid #2a7d8e;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-        .header h1 {
-            font-size: 2.5em;
-            margin: 0;
-            color: #2a7d8e;
-        }
+  <style>
+    :root {
+      --bg-color: #f8f9fa;
+      --text-color: #1a1a1a;
+      --link-color: #0073e6;
+      --link-hover: #005bb5;
+      --subtext-color: #444;
+      --border-color: #ddd;
+      --section-bg: #ffffff;
+    }
 
-        .header h2 {
-            margin: 10px 0;
-            font-weight: normal;
-            color: #555;
-        }
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --link-color: #66b2ff;
+      --link-hover: #3399ff;
+      --subtext-color: #aaa;
+      --border-color: #222;
+      --section-bg: #1e1e1e;
+    }
 
-        .header .contact-info {
-            font-size: 0.95em;
-            margin: 5px 0;
-        }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 40px auto;
+      padding: 0 40px;
+      max-width: 850px;
+      line-height: 1.7;
+      font-size: 15px;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-        .header .contact-info a {
-            color: #2a7d8e;
-            text-decoration: none;
-        }
+    h1 {
+      font-size: 30px;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
 
-        .header .contact-info a:hover {
-            text-decoration: underline;
-        }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 8px;
+      position: relative;
+    }
 
-        .section-title {
-            font-size: 1.4em;
-            font-weight: bold;
-            margin-top: 30px;
-            color: #2a7d8e;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--link-color);
+      margin-top: 6px;
+    }
 
-        .content {
-            margin: 20px 0;
-        }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 8px 0 2px;
+    }
 
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
+    ul {
+      padding-left: 18px;
+      margin: 4px 0 10px;
+    }
 
-        ul li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
+    li {
+      margin-bottom: 4px;
+    }
 
-        .core-skills {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+    address {
+      font-style: normal;
+      font-size: 14px;
+      color: var(--subtext-color);
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
 
-        .core-skills th, .core-skills td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
+    .location-date {
+      font-size: 14px;
+      color: var(--subtext-color);
+      margin-bottom: 4px;
+    }
 
-        .core-skills th {
-            background-color: #2a7d8e;
-            color: #fff;
-        }
+    a {
+      color: var(--link-color);
+      position: relative;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
 
-        .core-skills td {
-            background-color: #f9f9f9;
-        }
+    a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      left: 0;
+      bottom: -2px;
+      background-color: currentColor;
+      transition: width 0.3s;
+    }
 
-        .footer {
-            text-align: center;
-            font-size: 0.85em;
-            color: #777;
-            margin-top: 20px;
-        }
-    
-        a {
-            color: #2a7d8e;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+    a:hover::after {
+      width: 100%;
+    }
 
-        a:hover {
-            color: #1e5d6c;
-        }
+    section {
+      background-color: var(--section-bg);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
 
-        .header h1 {
-            font-size: 2.8em;
-            font-weight: 700;
-        }
+    p {
+      margin-bottom: 10px;
+    }
 
-        .header h2 {
-            font-size: 1.4em;
-            font-weight: 300;
-        }
+    em {
+      color: var(--subtext-color);
+      font-style: normal;
+    }
 
-        .container {
-            padding: 35px;
-        }
+    @media (max-width: 600px) {
+      body {
+        padding: 0 20px;
+      }
+    }
 
-        .section-title {
-            position: relative;
-            padding-left: 10px;
-        }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: var(--border-color);
+      color: var(--text-color);
+      border: none;
+      padding: 6px 12px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
 
-        .section-title::before {
-            content: '▌';
-            color: #2a7d8e;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        .footer {
-            margin-top: 40px;
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
-        }
-    </style>
-    
+    .theme-toggle:hover {
+      background-color: var(--link-hover);
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="header">
-        <h1>Rahul Chauhan</h1>
-        <h2>Java Developer</h2>
-        <p class="contact-info">📍 Noida, Uttar Pradesh, India | 📞 +91 9136812895 | 📧 <a href="mailto:rahulchauhan2020.model@gmail.com">rahulchauhan.12071998@gmail.com</a></p>
-        <p>🔗 <a href="https://linkedin.com/in/rahul-chauhan-766528219" target="_blank">linkedin.com/in/rahul-chauhan-766528219</a></p>
-    </div>
+  <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light">🌙</button>
 
-    <div class="section-title">Professional Summary</div>
-    <div class="content">
-        <p>
-            Experienced Java Developer with 3+ years in creating and optimizing enterprise applications using Java 8+, Spring Boot, and Kafka. Proven expertise in designing scalable microservices, implementing RESTful APIs, and troubleshooting complex systems. Skilled at collaborating within Agile teams, ensuring seamless software delivery while continuously improving system performance. Committed to learning and delivering user-focused, innovative solutions that align with business goals.
-        </p>
-    </div>
+  <h1>Rahul Chauhan</h1>
+  <address>
+    Senior Java Backend Developer | Microservices • System Design • Spring Boot<br/>
+    📞 <a href="tel:+919138182895">+91 9138182895</a>
+    📧 <a href="mailto:rahulchauhan.12071998@gmail.com">Email</a>
+    🔗 <a href="https://linkedin.com/in/rahulchauhan766528219" target="_blank">LinkedIn</a>
+    🌐 <a href="https://portfolio-eec4a.web.app/about" target="_blank">Portfolio</a>
+    💻 <a href="https://www.geeksforgeeks.org/user/rahul_chauhan_1998/" target="_blank">GFG Profile</a>
+    📍 Noida, Uttar Pradesh, India
+  </address>
 
-    <div class="section-title">Soft Skills</div>
-    <div class="content">
-        <ul>
-            <li>Open to constructive feedback, fostering continuous growth and improvement.</li>
-            <li>Highly motivated to learn and refine skills daily.</li>
-            <li>Strong communicator, adept at sharing ideas effectively within a team.</li>
-            <li>Collaborative, maintaining team decorum and building harmonious working relationships.</li>
-            <li>Independent and goal-oriented, capable of delivering results autonomously.</li>
-        </ul>
-    </div>
+  <section>
+    <h2>Professional Summary</h2>
+    <p>
+      Versatile and performance-focused Java Backend Developer with 3+ years of experience designing and engineering scalable, event-driven backend systems using Java, Spring Boot, and Kafka. Adept at building distributed microservices, reducing latency, and implementing robust, maintainable APIs. Proven ability to lead critical backend initiatives, collaborate cross-functionally, and drive architecture modernization through CI/CD and cloud-native practices.
+    </p>
+  </section>
 
-    <div class="section-title">Core Skills</div>
-    <table class="core-skills">
-        <thead>
-            <tr>
-                <th>Category</th>
-                <th>Skills</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Programming & Frameworks</td>
-                <td>Java 8+, Spring Boot, Hibernate, JPA</td>
-            </tr>
-            <tr>
-                <td>Microservices & APIs</td>
-                <td>RESTful APIs, Spring Cloud Gateway, Swagger/OpenAPI</td>
-            </tr>
-            <tr>
-                <td>Event Streaming</td>
-                <td>Kafka Producers/Consumers, Kafka Streams</td>
-            </tr>
-            <tr>
-                <td>Database Management</td>
-                <td>MySQL, Query Optimization</td>
-            </tr>
-            <tr>
-                <td>DevOps & CI/CD</td>
-                <td>Docker, Kubernetes, Jenkins, GitLab CI/CD</td>
-            </tr>
-            <tr>
-                <td>Monitoring & Logging</td>
-                <td>ELK Stack, Log4j, SonarQube</td>
-            </tr>
-        
-<tr>
-    <td>Security</td>
-    <td>JWT, Spring Security (RBAC), OAuth2 (basic)</td>
-</tr>
-<tr>
-    <td>NoSQL & Caching</td>
-    <td>MongoDB, Redis</td>
-</tr>
-<tr>
-    <td>Schedulers & Background Jobs</td>
-    <td>Spring Scheduler, Quartz</td>
-</tr>
-<tr>
-    <td>Testing</td>
-    <td>JUnit 5, Mockito</td>
-</tr>
-<tr>
-    <td>Tools & Practices</td>
-    <td>Postman, Git, GitHub/GitLab, Jira, Swagger UI</td>
-</tr>
-<tr>
-    <td>Soft Skills & Workflow</td>
-    <td>Agile/Scrum, Code Reviews, Documentation, Collaboration</td>
-</tr>
+  <section>
+    <h2>Professional Experience</h2>
 
-</tbody>
-    </table>
+    <article>
+      <h3>Java Developer</h3>
+      <div class="location-date">Smartbox Lockers | Noida | Oct 2024 – Present</div>
+      <ul>
+        <li>Developed performance-optimized RESTful APIs and data migration services.</li>
+        <li>Improved data access latency by optimizing queries and introducing caching.</li>
+        <li>Contributed to distributed services using Java 8–17 with strong focus on scalability.</li>
+        <li>Collaborated with DevOps and QA for CI/CD and production support.</li>
+      </ul>
+    </article>
 
-    <div class="section-title">Professional Experience</div>
-    <div class="content">
-        <p><strong>Smartbox Lockers</strong> | <i>Java Developer</i> | <span>October 2024 – Present</span></p>
-        <ul>
-            <li>Developed and optimized event-driven microservices using Kafka and Spring Boot.</li>
-            <li>Enhanced system performance by troubleshooting and improving database queries.</li>
-            <li>Designed REST APIs to meet evolving business requirements and ensure seamless integration.</li>
-        </ul>
+    <article>
+      <h3>Junior Java Developer</h3>
+      <div class="location-date">Smartbox Lockers | Noida | Oct 2022 – Oct 2024</div>
+      <ul>
+        <li>Built and deployed RESTful APIs for logistics and booking services.</li>
+        <li>Enhanced backend performance by 30% using asynchronous patterns.</li>
+        <li>Utilized functional programming with Java 8+ to improve code quality.</li>
+      </ul>
+    </article>
 
-        <p><strong>Smartbox Lockers</strong> | <i>Software Engineer Jr. (Java)</i> | <span>October 2022 – October 2024</span></p>
-        <ul>
-            <li>Assisted in developing and maintaining Java-based microservices for enterprise systems.</li>
-            <li>Optimized database operations and enhanced backend functionality using MySQL and PostgreSQL.</li>
-            <li>Implemented logging and monitoring improvements using the ELK stack for better issue tracking.</li>
-        </ul>
+    <article>
+      <h3>Junior Java Developer</h3>
+      <div class="location-date">Scoreme Solutions Pvt Ltd | Gurgaon | Feb 2022 – Oct 2022</div>
+      <ul>
+        <li>Engineered financial document parsing backend using Java and MySQL.</li>
+        <li>Automated PDF analysis using Apache PDFBox with REST integration.</li>
+      </ul>
+    </article>
+  </section>
 
-        <p><strong>GeeksforGeeks</strong> | <i>Technical Content Writer</i> | <span>April 2023 – Present</span></p>
-        <ul>
-            <li>Authored 50+ articles on advanced Java topics, design patterns, and multithreading.</li>
-            <li>Provided comprehensive tutorials to address real-world programming challenges.</li>
-        </ul>
+  <section>
+    <h2>Key Projects</h2>
+    <ul>
+      <li><strong>Locker Microservice Platform:</strong> Real-time locker state sync using Kafka & Redis.</li>
+      <li><strong>PDF Data Pipeline:</strong> Reduced manual reconciliation effort by 60% via automation.</li>
+      <li><strong>WhatsApp Chatbot:</strong> Business messaging via WhatsApp API for customer engagement.</li>
+      <li><strong>Third-Party API Integration:</strong> Extended platform capabilities via external services.</li>
+      <li><strong>URL Shortener:</strong> Developed link shortener with tracking & analytics.</li>
+    </ul>
+  </section>
 
-        <p><strong>ScoreMe Solutions Pvt. Ltd</strong> | <i>Junior Java Developer</i> | <span>January 2022 – October 2022</span></p>
-        <ul>
-            <li>Improved backend systems for the Bank Statement Analyzer product.</li>
-            <li>Optimized SQL queries to enhance database performance and system stability.</li>
-        </ul>
-    </div>
+  <section>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, C, C++, Python, C#</li>
+      <li><strong>Frameworks:</strong> Spring Boot, MVC, Hibernate, JPA</li>
+      <li><strong>Tools:</strong> Git, Docker, Jenkins, SonarQube, Postman</li>
+      <li><strong>Monitoring:</strong> ELK Stack</li>
+      <li><strong>Cloud:</strong> AWS (EC2, S3, RDS), Kubernetes</li>
+      <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      <li><strong>Practices:</strong> Agile, CI/CD, TDD, Microservices, System Design</li>
+    </ul>
+  </section>
 
-    <div class="section-title">Projects</div>
-    <div class="content">
-        <p><strong>Smartbox Locker Project</strong></p>
-        <ul>
-            <li>Contributed to the development of over 12 microservices, each serving a specific purpose.</li>
-            <li>Integrated seamless communication between microservices using Kafka, RestTemplate, and HttpClient.</li>
-            <li>Optimized database queries and improved scalability to handle increased workloads.</li>
-        </ul>
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Sc. IT</strong> – University of Mumbai, <em>2018 – 2021</em> | CGPA: 8.2</li>
+      <li><strong>HSC (12th)</strong> – UP State Board, <em>2016</em> | 84.40%</li>
+      <li><strong>SSC (10th)</strong> – UP State Board, <em>2014</em> | 84%</li>
+    </ul>
+  </section>
 
-        <p><strong>WhatsApp API SDK Integration</strong></p>
-        <ul>
-            <li>Integrated WhatsApp API SDK with the Smartbox Locker project for real-time notifications.</li>
-            <li>Implemented message scheduling and ensured timely delivery of notifications.</li>
-            <li>Enhanced notification reliability by handling retries under varying network conditions.</li>
-        </ul>
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>Spring Boot Backend Masterclass – Udemy</li>
+      <li>System Design Essentials – Udemy</li>
+    </ul>
+  </section>
 
-        <p><strong>PDF Text Extraction</strong></p>
-        <ul>
-            <li>Developed a PDF text extraction and manipulation tool for automated document processing.</li>
-            <li>Leveraged Apache PDFBox for efficient text extraction and reporting.</li>
-        </ul>
-    </div>
+  <section>
+    <h2>Awards & Recognition</h2>
+    <ul>
+      <li><strong>Rising Star Award:</strong> Recognized for high-impact backend features.</li>
+      <li><strong>Fast-Track Promotion:</strong> Promoted for architectural contributions.</li>
+    </ul>
+  </section>
 
-    <div class="section-title">Awards & Recognitions</div>
-    <div class="content">
-        <ul>
-            <li><strong>Rising Star Award</strong> – Honored for contributions to system optimization at Smartbox Lockers.</li>
-            <li><strong>Promoted to Java Developer</strong> – Recognized for excellence and dedication.</li>
-            <li><strong>Technical Writing Excellence</strong> – Published 50+ impactful articles on GeeksforGeeks.</li>
-        </ul>
-    </div>
+  <section>
+    <h2>Portfolio</h2>
+    <p>
+      📝 <a href="https://www.geeksforgeeks.org/spring-boot-pathvariable-and-requestparam-annotations/?itm_source=auth" target="_blank">Spring Boot – @PathVariable vs @RequestParam</a><br/>
+      📝 <a href="https://www.geeksforgeeks.org/spring-when-to-use-qualifier-and-autowired-for-dependency-injection/" target="_blank">Spring – @Qualifier vs @Autowired</a>
+    </p>
+  </section>
 
-    <div class="footer">
-        <p>Resume Updated: APRIL 2025</p>
-    </div>
-</div>
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Rahul Chauhan",
+    "jobTitle": "Java Backend Developer",
+    "url": "https://portfolio-eec4a.web.app/about",
+    "sameAs": [
+      "https://linkedin.com/in/rahulchauhan766528219",
+      "https://www.geeksforgeeks.org/user/rahul_chauhan_1998/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "India"
+    }
+  }
+  </script>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const userTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const themeToggle = document.querySelector('.theme-toggle');
+
+    if (userTheme === "dark" || (!userTheme && prefersDark)) {
+      document.body.classList.add("dark");
+      themeToggle.textContent = "☀️";
+      document.title = "☀️ Rahul Chauhan – Backend Engineer";
+    }
+
+    function toggleTheme() {
+      const isDark = document.body.classList.toggle("dark");
+      themeToggle.textContent = isDark ? "☀️" : "🌙";
+      document.title = isDark ? "☀️ Rahul Chauhan – Backend Engineer" : "🌙 Rahul Chauhan – Backend Engineer";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    }
+  </script>
 
 </body>
 </html>
