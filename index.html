@@ -178,6 +178,23 @@ header .location {
 .project-card a { color: var(--link-color); font-weight: 600; text-decoration: none; }
 .project-card a:hover { text-decoration: underline; }
 
+/* Download Resume Button */
+.download-btn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.download-btn:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
 /* Responsive */
 @media(max-width:768px){ header h1 { font-size:2.2rem; } .theme-toggle, #backToTop { font-size:13px; padding:6px 10px; } }
 @media(max-width:480px){ .contact-info a { display:block; margin-bottom:10px; } }
@@ -200,6 +217,13 @@ header .location {
     🌐 <a href="https://portfolio-eec4a.web.app/about" target="_blank">Portfolio</a>
     💻 <a href="https://www.geeksforgeeks.org/user/rahul_chauhan_1998/" target="_blank">GFG</a>
   </div>
+
+  <!-- Download Resume Button -->
+  <!-- Download Resume Button -->
+<div style="text-align:center; margin: 20px 0;">
+  <a href="Rahul-Chauhan-Java-Backend-Developer.pdf" download class="download-btn">📄 Download My Resume</a>
+</div>
+
 </header>
 
 <!-- Professional Summary -->
